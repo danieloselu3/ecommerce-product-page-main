@@ -71,7 +71,50 @@ Grid
     margin: 0 auto;
     padding-left: 100px;
     padding-right: 100px;
-    width: 1440px;
+    width: 1240px;
 }
+
+
+/*
+======================================
+Header Style
+======================================
+*/
+
+#site-primary-logo {
+	margin-right: 20px;
+}
+
+.header-frame {
+	display:flex;
+	justify-content: space-between;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-bottom: .25px solid black ;
+	margin-bottom: 100px;
+}
+
+.header-frame-a, .header-frame-b {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.primary-navigation > ul {
+	display: flex;
+	flex-direction: row;
+}
+
+.primary-navigation ul li {
+	margin: auto 15px;
+}
+#product-basket {
+	margin-right: 15px;
+}
+#user-profile-picture img{
+	width: 50px;
+	margin-left: 15px;
+}
+
 
 
