@@ -90,8 +90,7 @@ Header Style
 	justify-content: space-between;
 	padding-top: 30px;
 	padding-bottom: 30px;
-	border-bottom: .25px solid black ;
-	margin-bottom: 100px;
+	margin-bottom: 20px;
 }
 
 .header-frame-a, .header-frame-b {
@@ -122,21 +121,39 @@ Header Style
 	==================================
 */
 
+.general-product-frame {
+	display: flex;
+	flex-direction: row;
+}
+
+.general-product-pics, .general-product-description {
+	padding: 20px;
+	margin: 30px;
+}
+
+.general-product-pics {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .general-product-thumbnails {
 	display: flex;
 	flex-direction: row;
-	// justify-content: space-evenly;
+	justify-content: space-evenly;
 }
 
 .general-product-main-pic img {
 	width: 450px;
-	border-radius: 10px;
+	border-radius: 20px;
+	padding: 10px;
+	margin: 10px;
 }
 
 .general-product-thumbnail img {
-	width: 100px;
-	border-radius: 20px;
-	padding: 15px;
+	width: 112.5px;
+	border-radius: 15px;
+	padding: 10px;
 }
 
 
