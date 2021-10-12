@@ -116,5 +116,28 @@ Header Style
 	margin-left: 15px;
 }
 
+/*
+	==================================
+	General Product Frame Style
+	==================================
+*/
+
+.general-product-thumbnails {
+	display: flex;
+	flex-direction: row;
+	// justify-content: space-evenly;
+}
+
+.general-product-main-pic img {
+	width: 450px;
+	border-radius: 10px;
+}
+
+.general-product-thumbnail img {
+	width: 100px;
+	border-radius: 20px;
+	padding: 15px;
+}
+
 
 
