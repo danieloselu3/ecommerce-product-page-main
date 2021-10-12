@@ -74,6 +74,10 @@ Grid
     width: 1240px;
 }
 
+body {
+	font-family: 'Kumbh Sans', sans-serif;
+}
+
 
 /*
 ======================================
@@ -106,6 +110,8 @@ Header Style
 
 .primary-navigation ul li {
 	margin: auto 15px;
+	font-weight: 400;
+	color: hsl(219, 9%, 45%);
 }
 #product-basket {
 	margin-right: 15px;
@@ -127,13 +133,13 @@ Header Style
 }
 
 .general-product-pics, .general-product-description {
+	display: flex;
+	flex-direction: column;
 	padding: 20px;
 	margin: 30px;
 }
 
 .general-product-pics {
-	display: flex;
-	flex-direction: column;
 	align-items: center;
 }
 
@@ -155,6 +161,77 @@ Header Style
 	border-radius: 15px;
 	padding: 10px;
 }
+
+// general description Styling
+
+.general-product-description {
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.general-product-company h1 {
+	color: $primary-color-1;
+	font-size: 16px;
+	font-weight: 700;
+	padding: 10px 0;
+	margin-bottom: 20px;
+}
+
+.general-product-edition {
+	font-size: 40px;
+	font-weight: 700;
+	padding: 10px 0;
+	margin-bottom: 30px;
+}
+
+.general-product-detailed-description p {
+	font-size: 16px;
+	font-weight: 400;
+	color: hsl(219, 9%, 45%);
+	padding: 10px 0;
+	margin-bottom: 20px;
+}
+
+// general product price styling
+
+.general-product-price-section {
+	display: flex;
+	flex-direction: column;
+	padding: 10px 0;
+	margin-bottom: 20px;
+}
+
+.general-product-discount-section {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding-bottom: 15px;
+}
+
+.general-product-discount-price, .general-product-discount-percentage {
+	padding: 5px 0;
+	margin-right: 20px;
+}
+
+.general-product-discount-price {
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.general-product-discount-percentage {
+	color: $primary-color-1;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.general-product-selling-price {
+	font-size: 16px;
+	font-weight: 400;
+	color: hsl(219, 9%, 45%)
+}
+
+
+
 
 
 
