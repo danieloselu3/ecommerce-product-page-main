@@ -109,7 +109,8 @@ Header Style
 	flex-direction: row;
 }
 
-.primary-navigation ul li {
+.primary-navigation ul li a{
+	text-decoration: none;
 	margin: auto 15px;
 	font-weight: 400;
 	color: hsl(217, 17%, 64%);
@@ -117,15 +118,15 @@ Header Style
 #product-basket {
 	margin-right: 15px;
 }
-#user-profile-picture img{
+#user-profile-picture a img{
 	width: 50px;
 	margin-left: 15px;
 }
 
 /*
-	==================================
-	General Product Frame Style
-	==================================
+==================================
+General Product Frame Style
+==================================
 */
 
 .general-product-frame {
@@ -261,13 +262,17 @@ Header Style
 	background-color: hsl(223, 64%, 98%);
 }
 
-.general-product-add-to-cart-section {
+.general-product-add-to-cart-section a {
 	width: 250px;
+	height: 50px;
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	text-decoration: none;
 	background-color: $primary-color-1;
 	border-radius: 5px;
 	margin-left: 10px;
+	box-shadow: 0 1px 20px hsl(26, 100%, 55%);
 }
 
 .general-product-add-to-cart-section-description {
@@ -281,7 +286,32 @@ Header Style
 	width: 15px;
 }
 
+/*
+===================================
+Hover Styles
+===================================
+*/
 
+.primary-navigation ul li a:hover {
+	color: hsl(0, 0%, 0%);
+	border-bottom: 5px solid hsl(26, 100%, 55%) ;
+	padding-bottom: 40px;
+}
+
+#user-profile-picture a img:hover {
+	border: 2px solid hsl(26, 100%, 55%);
+	border-radius: 50%;
+}
+
+.general-product-thumbnail img:hover {
+	opacity: 0.5;
+}
+
+.general-product-cart-minus:hover,
+.general-product-cart-plus:hover,
+.general-product-add-to-cart-section:hover {
+	opacity: 0.5;
+}
 
 
 
